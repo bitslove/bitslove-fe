@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-collage',
   templateUrl: './collage.component.html',
   styleUrls: ['./collage.component.css'],
-  
+  imports: [CommonModule] ,
+  standalone: true
   
 })
 
@@ -17,15 +18,15 @@ export class CollageComponent implements OnInit {
   constructor(private PhotoService: PhotoService) {}
 
   ngOnInit(): void {
-    // this.PhotoService.getCollagePhotos().subscribe(
-    //   (urls: string[]) => {
-    //     this.photoUrls = urls;
-    //     console.info(this.photoUrls)
-    //   },
-    //   (error) => {
-    //     console.error('Error fetching photos', error);
-    //   }
-    // );
+     this.PhotoService.getCollagePhotos().subscribe(
+       (urls: string[]) => {
+         this.photoUrls = urls;
+         console.info(this.photoUrls)
+       },
+       (error) => {
+         console.error('Error fetching photos', error);
+       }
+     );
   }
 }
 
