@@ -16,3 +16,7 @@
     object-fit: cover;
   }
   
+
+  .img-fluid {
+    cursor: pointer;
+  }

@@ -1,6 +1,14 @@
-<div class="collage">
+<!-- <div class="collage">
     <div *ngFor="let photoUrl of photoUrls">
         <img [src]="photoUrl" alt="Photo">
       </div>
   </div>
-  
+   -->
+<!-- app.component.html o cualquier otro archivo donde desees insertar el botón -->
+<div class="container mt-5">
+  <div class="row">
+    <div *ngFor="let image of _album; let i = index" class="col-md-4 mb-4">
+      <img [src]="image.src" alt="Imagen" class="img-fluid" (click)="open(i)">
+    </div>
+  </div>
+</div>
