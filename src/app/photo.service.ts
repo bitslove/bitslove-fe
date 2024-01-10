@@ -10,8 +10,7 @@ export class PhotoService {
 
   constructor(private http: HttpClient) {}
 
-  getCollagePhotos(): Observable<string[]> {
-    
-    return this.http.get<string[]>(this.apiUrl);
+  getCollagePhotos(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
   }
 }

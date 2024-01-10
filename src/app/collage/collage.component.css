@@ -20,3 +20,24 @@
   .img-fluid {
     cursor: pointer;
   }
+
+  /* styles.css o styles.scss */
+
+h1 {
+  color: #333; /* Color del texto */
+  font-family: 'Arial', sans-serif; /* Fuente del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 20px; /* Espaciado interno */
+  background-color: #f0f0f0; /* Color de fondo */
+  border-bottom: 2px solid #ccc; /* Línea de borde inferior */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.headtittle {
+  color: darkred; /* Color del texto específico para este encabezado */
+  background-color: floralwhite;
+  font-size: 28px; /* Tamaño de fuente específico */
+  font-style: unset;
+  font-weight: bold;
+  /* Otros estilos específicos para este encabezado */
+}
