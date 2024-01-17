@@ -1,7 +1,7 @@
 <h1 class="headtittle">✨Galería de Fotos✨</h1>
 <div class="container mt-5">
   <div class="row">
-    <div *ngFor="let image of album; let i = index" class="col-md-4 mb-4">
+    <div *ngFor="let image of album; let i = index" class="col-md-4 mb-4 photo-container" >
       <img [src]="image.src" alt="Imagen" class="img-fluid" (click)="open(i)">
     </div>
   </div>

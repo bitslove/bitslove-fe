@@ -4,6 +4,7 @@ import {  RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { Lightbox, LightboxModule } from 'ngx-lightbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,
